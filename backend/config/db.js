@@ -1,10 +1,18 @@
 import mongoose from "mongoose";
+import dotenv from 'dotenv';
+dotenv.config();
 
-export const connectDB = async ()=> {
-  await mongoose.connect("")
-  .then(() => {console.log("DB connected")})
-}
+const { MONGO_USER, MONGO_PASS, MONGO_CLUSTER, MONGO_DB } = process.env;
+const uri = `mongodb+srv://${MONGO_USER}:${MONGO_PASS}@${MONGO_CLUSTER}/?appName=${MONGO_DB}`;
 
+export const connectDB = async () => {
+  try {
+    await mongoose.connect(uri);
+    console.log('DB CONNECTED');
+  } catch (err) {
+    console.error('DB CONNECTION ERROR:', err);
+  }
+};
 
 // STEPS TO GET YOUR MONGODB ATLAS USERNAME & PASSWORD:
 //
@@ -55,24 +63,4 @@ export const connectDB = async ()=> {
 // 8. UPDATE YOUR CODE TO USE DOTENV
 //    • Install dotenv: `npm install dotenv`
 //    • In your code:
-//      ```js
-//      import mongoose from 'mongoose';
-//      import dotenv from 'dotenv';
-//      dotenv.config();
-//
-//      const { MONGO_USER, MONGO_PASS, MONGO_CLUSTER, MONGO_DB } = process.env;
-//      const uri = `mongodb+srv://${MONGO_USER}:${MONGO_PASS}@${MONGO_CLUSTER}/${MONGO_DB}?retryWrites=true&w=majority`;
-//
-//      export const connectDB = async () => {
-//        try {
-//          await mongoose.connect(uri);
-//          console.log('DB CONNECTED');
-//        } catch (err) {
-//          console.error('DB CONNECTION ERROR:', err);
-//        }
-//      };
-//      ```
-//
-// You can now safely paste these commented steps into your code file! 😊
 
-// IF HAVE ANY QUERIES CALL ON +91 8299431275  OR EMAIL ON: hexagonsservices@gmail.com
