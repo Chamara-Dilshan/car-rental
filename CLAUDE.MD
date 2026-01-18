@@ -1,4 +1,4 @@
-# Car Rental Systems
+# Car Rental System
 
 A full-stack car rental application with separate customer and admin interfaces.
 
