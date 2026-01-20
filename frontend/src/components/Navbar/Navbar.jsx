@@ -222,11 +222,11 @@ const Navbar = () => {
                 <div className={styles.logoContainer}>
                   <img
                     src={logo}
-                    alt="Karzone logo"
+                    alt="DRIVEHUB logo"
                     className="h-[1em] w-auto block"
                     style={{ display: "block", objectFit: "contain" }}
                   />
-                  <span className={styles.logoText}>KARZONE</span>
+                  <span className={styles.logoText}>DRIVEHUB</span>
                 </div>
               </Link>
 

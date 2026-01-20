@@ -24,11 +24,11 @@ const Footer = () => {
               <div className={styles.logoContainer}>
                 <img
                   src={logo}
-                  alt="Karzone logo"
+                  alt="DRIVEHUB logo"
                   className="h-[1em] w-auto block"
                   style={{ display: 'block', objectFit: 'contain' }}
                 />
-                <span className={styles.logoText}>KARZONE</span>
+                <span className={styles.logoText}>DRIVEHUB</span>
               </div>
             </Link>
             <p className={styles.description}>
@@ -77,15 +77,15 @@ const Footer = () => {
             <ul className={styles.contactList}>
               <li className={styles.contactItem}>
                 <FaMapMarkerAlt className={styles.contactIcon} />
-                <span>123 Drive Avenue, Auto City, CA 90210</span>
+                <span>No 168, Lakshauyana, Polonnaruwa</span>
               </li>
               <li className={styles.contactItem}>
                 <FaPhone className={styles.contactIcon} />
-                <span>+91 8299431275</span>
+                <span>+94 765479242</span>
               </li>
               <li className={styles.contactItem}>
                 <FaEnvelope className={styles.contactIcon} />
-                <span>info@hexagonsservices.com</span>
+                <span>chamaradilshan.dev@gmail.com</span>
               </li>
             </ul>
             <div className={styles.hoursContainer}>
@@ -126,16 +126,9 @@ const Footer = () => {
         
         {/* Bottom copyright */}
         <div className={styles.copyright}>
-          <p>© {new Date().getFullYear()} KARZONE. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} DRIVEHUB. All rights reserved.</p>
           <p className="mt-3 md:mt-0">
-            Designed by <a 
-              href="https://hexagondigitalservices.com" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className={styles.designerLink}
-            >
-              Hexagon Digital Services
-            </a>
+            Designed by <span className={styles.designerLink}>Chamara Dilshan</span>
           </p>
         </div>
       </div>

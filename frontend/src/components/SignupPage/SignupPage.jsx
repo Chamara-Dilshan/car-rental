@@ -172,12 +172,12 @@ const SignupPage = () => {
               <div className={signupStyles.signupCard.logoText}>
                 <img
                   src={logo}
-                  alt="Karzone logo"
+                  alt="DRIVEHUB logo"
                   className="h-[1.2em] w-auto block object-contain"
                   style={{ display: "block" }}
                 />
                 <span className="font-bold tracking-wider text-white mt-1">
-                  KARZONE
+                  DRIVEHUB
                 </span>
               </div>
             </div>

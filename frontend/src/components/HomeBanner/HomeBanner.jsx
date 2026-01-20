@@ -67,7 +67,7 @@ export default function HeroSleek() {
           <img
             src={img1}
             alt="Futuristic car"
-            className="w-full object-center opacity-95"
+            className="w-full h-full object-cover object-center"
           />
 
           <div className={styles.gradientOverlay} />
@@ -136,7 +136,7 @@ export default function HeroSleek() {
         <div className={styles.ctaContainer}>
           <div className={styles.ctaCard}>
             <div>
-              <p className={styles.subtitle}>Karzone</p>
+              <p className={styles.subtitle}>DRIVEHUB</p>
               <h3 className={styles.title}>Next‑gen fleet. Instant drive.</h3>
               <p className={styles.description}>
                 Rent Your Dream Car. Transparent pricing. Book in seconds.
